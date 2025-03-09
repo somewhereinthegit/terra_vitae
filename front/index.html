@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu Phaser</title>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.js"></script>
+</head>
+<body>
+
+<div id="auth-container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    background: #222; padding: 20px; border-radius: 10px; text-align: center; width: 300px;">
+
+    <!-- Onglets Connexion / Inscription -->
+    <div style="display: flex; justify-content: space-around; margin-bottom: 10px;">
+        <button id="login-tab" onclick="showLogin()" style="flex: 1; padding: 8px; background: #444; color: white; border: none;">Connexion</button>
+        <button id="register-tab" onclick="showRegister()" style="flex: 1; padding: 8px; background: #333; color: white; border: none;">Inscription</button>
+    </div>
+
+    <!-- Formulaire de Connexion -->
+    <div id="login-container">
+        <h3 style="color: white;">Connexion</h3>
+        <input type="text" id="login-username" placeholder="Nom du joueur" style="margin-bottom: 10px; width: 100%; padding: 8px;">
+        <input type="password" id="login-password" placeholder="Mot de passe" style="margin-bottom: 10px; width: 100%; padding: 8px;">
+        <button onclick="login()" style="padding: 10px; width: 100%;">Se connecter</button>
+        <p id="login-error" style="color: red; display: none;">Identifiants incorrects.</p>
+    </div>
+
+    <!-- Formulaire d'Inscription -->
+    <div id="register-container" style="display: none;">
+        <h3 style="color: white;">Inscription</h3>
+        <input type="text" id="register-username" placeholder="Nom du joueur" style="margin-bottom: 10px; width: 100%; padding: 8px;">
+        <input type="password" id="register-password" placeholder="Mot de passe" style="margin-bottom: 10px; width: 100%; padding: 8px;">
+        <button onclick="register()" style="padding: 10px; width: 100%;">S'inscrire</button>
+        <p id="register-error" style="color: red; display: none;">Erreur lors de l'inscription.</p>
+    </div>
+
+</div>
+
+
+<script src="main.js" defer></script>
+
+
+
+</body>
+</html>
