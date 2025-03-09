@@ -1,0 +1,1 @@
+mongorestore  --db terra_vitae --out F:\Local\Terra_Vitae\mongodb\terra_vitae

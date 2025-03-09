@@ -1,0 +1,1 @@
+mongodump --db terra_vitae --out F:\Local\Terra_Vitae\mongodb
